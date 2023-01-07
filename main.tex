@@ -1,0 +1,44 @@
+\documentclass[hyperref]{ctexart}
+
+\usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry} %页边距
+\usepackage{helvet}
+\usepackage{amsmath, amsfonts, amssymb} % 数学公式、符号
+\usepackage[english]{babel}
+\usepackage{graphicx}   % 图片
+\usepackage{url}        % 超链接
+\usepackage{bm} 
+%\usepackage{graphicx}        % 加粗方程字体
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}       
+\renewcommand{\algorithmicensure}{ \textbf{Initialize:}} 
+\renewcommand{\algorithmicreturn}{ \textbf{Output:}}     
+%算法格式
+\usepackage{fancyhdr} %设置页眉、页脚
+\pagestyle{fancy}
+\chead{{\Large \textbf{说\hspace{1em}明\hspace{1em}书}}}
+\cfoot{\thepage}
+%\usepackage{hyperref} %bookmarks
+\hypersetup{colorlinks, bookmarks, unicode} %unicode
+\usepackage{multicol}
+\usepackage{indentfirst} %%缩进
+
+\input{Figures/setup/patent}
+\input{Figures/cover/cover_abstract}
+\input{Figures/specification/spec_context}
+
+
+%opening
+\begin{document}
+
+	\include{Figures/cover/cover}
+
+	\include{Figures/claim/claim}
+
+	\include{Figures/specification/specification}
+
+	\include{Figures/specification/picture/specpicture}
+
+\end{document}
